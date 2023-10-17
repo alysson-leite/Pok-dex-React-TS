@@ -29,8 +29,6 @@ const PokemonStats: React.FC<PokemonStatsProps> = ({ pokemon }) => {
     }
   }, []);
 
-  console.log(pokemonStats);
-
   return (
     <div>
       {pokemonStats ? (

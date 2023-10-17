@@ -73,9 +73,7 @@ export const getPokemonDetail = async (pokemon: {
 }): Promise<Pokemon> => {
   try {
     const response = await fetch(pokemon.url);
-    console.log(pokemon.url);
     const data = await response.json();
-    console.log(data);
     return convertPokeApiDetailToPokemon(data);
   } catch (error) {
     console.error(error);
@@ -92,11 +90,8 @@ export const getPokemons = async (
 
   try {
     const response = await fetch(url);
-    console.log(url);
     const jsonBody = await response.json();
-    console.log(jsonBody);
     const pokemons = jsonBody.results;
-    console.log(pokemons);
 
     const detailRequests = pokemons.map((pokemon: any) =>
       getPokemonDetail(pokemon)
@@ -116,12 +111,8 @@ export const getPokemonStats = async (pokemon: string): Promise<Pokemon> => {
 
   try {
     const response = await fetch(url);
-    console.log(url);
     const data = await response.json();
-    console.log(data);
     const pokemon = convertPokeApiDetailToPokemon(data);
-
-    console.log(pokemon);
 
     return pokemon;
   } catch (error) {

@@ -33,7 +33,6 @@ interface PokemonStatsProps {
 
 export const PokemonData: React.FC<PokemonStatsProps> = ({ pokemon }) => {
   const { theme } = useTheme();
-  console.log(pokemon.version_group_details);
 
   return (
     <Container className={`${pokemon.type}`}>
