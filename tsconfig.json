@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+      "module": "esnext",
+      "target": "es2017",
+      "lib": ["es6", "dom"],
+      "jsx": "react",
+      "allowJs": true,
+      "outDir": "./dist",
+      "strict": true,
+      "noImplicitAny": true,
+      "sourceMap": true,
+      "esModuleInterop": true,
+      "resolveJsonModule": true,
+      "moduleResolution": "node",
+      "allowSyntheticDefaultImports": true,
+      "types": ["jest"],
+      "baseUrl": ".",
+      "paths": {
+        "@/components/*": [
+          "./components/*"
+        ],
+        "@/assets/*": [
+          "./assets/*"
+        ],
+      }
+  },
+  "include": ["src/**/*.ts", "src/**/*.js", "src/components/pokeball/style.tsx", "src/components/pokemonItem/styles.tsx", "src/components/button/styles.tsx", "src/assets/ts/main.tsx", "src/assets/ts/pokeApi.tsx", "src/assets/ts/pokemon-model.tsx", "src/assets/ts/mainStats.tsx", "src/pages/routes/AppRoutes.tsx"]
+}

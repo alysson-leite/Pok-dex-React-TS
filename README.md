@@ -1,70 +1,109 @@
-# Getting Started with Create React App
+# Projeto Pokédex
+> Projeto de uma Pokédex da primeira geração de Pokémons (os primeiros 151) utilizando a PokeAPI `https://pokeapi.co/`. Consiste de uma página inicial mostrando uma lista de 12 Pokémons com um botão que carrega os próximos 12 e adiciona à lista até o 151º. Há também uma página de detalhes de cada Pokémon clicado na lista. Projeto totalmente responsivo a todos os tamanhos de tela.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Começando com Create React App
 
-## Available Scripts
+Este projeto foi inicializado com [Create React App](https://github.com/facebook/create-react-app).
 
-In the project directory, you can run:
+## Índice
+- [Scripts Disponíveis](#scripts-disponíveis)
+- [Imagens do projeto](#imagem-do-projeto)
+- [Repositório do projeto](#repositório-do-projeto)
+- [Tecnologias 💻](#tecnologias-💻)
+- [O que aprendi 👨🏻‍💻](#o-que-aprendi-👨🏻‍💻)
+- [Contato 📩](#contato-📩)
+
+## Scripts Disponíveis
+
+No diretório do projeto, você pode executar:
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Executa o aplicativo no modo de desenvolvimento.\
+Abra [http://localhost:3000](http://localhost:3000) para visualizá-lo em seu navegador.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+A página será recarregada quando você fizer alterações.
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Inicia o executor de testes no modo de observação interativo.\
+Consulte a seção sobre [running tests](https://facebook.github.io/create-react-app/docs/running-tests) para obter mais informações.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Cria o aplicativo para produção na pasta `build`.\
+Ele agrupa corretamente o React no modo de produção e otimiza a construção para obter o melhor desempenho.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+A compilação é reduzida e os nomes dos arquivos incluem os hashes.\
+Seu aplicativo está pronto para ser implantado!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Consulte a seção sobre [deployment](https://facebook.github.io/create-react-app/docs/deployment) para obter mais informações.
 
 ### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**Observação: esta é uma operação unidirecional. Depois de `ejetar`, você não pode voltar!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Se você não estiver satisfeito com a ferramenta de construção e as opções de configuração, você pode `ejetar` a qualquer momento. Este comando removerá a dependência de compilação única do seu projeto.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Em vez disso, ele copiará todos os arquivos de configuração e as dependências transitivas (webpack, Babel, ESLint, etc) diretamente no seu projeto para que você tenha controle total sobre eles. Todos os comandos, exceto `eject`, ainda funcionarão, mas apontarão para os scripts copiados para que você possa ajustá-los. Neste ponto você está sozinho.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Você nunca precisa usar `eject`. O conjunto de recursos selecionados é adequado para implantações pequenas e médias e você não deve se sentir obrigado a usar esse recurso. No entanto, entendemos que esta ferramenta não seria útil se você não pudesse personalizá-la quando estiver pronto para isso.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Imagens do Projeto
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Lista de Pokémons da Primeira Geração utilizando a PokeAPI.
 
-### Code Splitting
+![Lista de Pokémons com tema claro](./.github/white-large.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Botão com troca de tema entre claro e escuro para uma melhor visualização do usuário, utilizando Context API do React.
 
-### Analyzing the Bundle Size
+![Lista de Pokémons com tema escuro](./.github/black-large.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Página de detalhes do Pokémon, com peso, altura, habilidades e ataques, bem como os status (Hp, Ataque, Defesa, Ataque especial, Defesa Especial e Velocidade) representados também com uma barra progressiva, onde o vermelho representa status baixo, verde é médio, azul é bom e amarelo é status ótimo.
 
-### Making a Progressive Web App
+![Página de Details](./.github/details-large.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- Exemplo da responsividade para Tablet.
 
-### Advanced Configuration
+![Lista responsiva para tablet](/.github/medim.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- Responsividade adaptada ao tamanho de smartphone
 
-### Deployment
+![Tamanho de celular](./.github/white-small.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- Página de detalhes no tamanho de Celular e com tema escuro.
 
-### `npm run build` fails to minify
+![Página de detalhes small](./.github/black-small.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Repositório do Projeto
+[🔗 Clique aqui para acessar o projeto]()
+
+## Tecnologias 💻
+
+Este projeto foi iniciado com [Create React App](https://github.com/facebook/create-react-app) e feito basicamente com React e Typescript.
+
+- HTML
+- CSS
+- Javascript
+- React
+    - React-router-dom
+    - React-icons
+    - Styled-components
+    - Context API
+- Typescript
+
+## O que aprendi 👨🏻‍💻
+
+Este projeto foi bastante desafiador para mim com o uso do Typescript. Aprendi bastante a fazer as tipagens de variáveis e parâmetros de funções e percebi o quanto deixa a aplicação mais robusta, tendo em vista que o Typescript nos ajuda a detectar e corrigir erros relacionados a tipos durante o desenvolvimento antes mesmo de executar o código.
+
+Pude aperfeiçoar o conhecimento em React, utilizando, por exemplo, o react-router-dom para fazer a paginação em SPAs. E também a utilização do styled-components, aprimorando o conhecimento em CSS escrevendo estilos como código javascript. Os components criados podem ser utilizados em qualquer parte da aplicação. Facilita também a manutenção.
+
+Pude aprender mais na prática também o Context API do React, passando dados sem a necessidade de passar props em cada nível. Assim, pude fazer um botão com a troca de temas entre Claro e Escuro.
+
+## Contato 📩
+[alysson_leite@yahoo.com.br](alysson_leite@yahoo.com.br)
+
+[Linkedin](https://www.linkedin.com/in/alysson-leite/)
+
+[Github](https://github.com/alysson-leite)
