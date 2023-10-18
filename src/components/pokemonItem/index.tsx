@@ -2,7 +2,7 @@ import React from "react";
 import { PokeCard, Number, Name, Detail, Type } from "./styles";
 import { Pokemon } from "../../assets/ts/pokemon-model";
 import { PokeballCard } from "../pokeball/pokeballCard";
-import "../../assets/styles/pokedex.css";
+import "../../assets/styles/styles.css";
 
 interface PokemonItemProps {
   pokemon: Pokemon;
