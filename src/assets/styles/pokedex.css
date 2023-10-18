@@ -1,6 +1,7 @@
+/* Pokemon Types */
 
 .grass {
-  background-color: #48D0B0;
+  background-color: #48d0b0;
 }
 
 .normal {
@@ -69,110 +70,4 @@
 
 .dragon {
   background-color: #6f38f6;
-}
-
-.pokemons {
-  display: grid;
-  grid-template-columns: 1fr;
-  margin: 0.5rem 2rem;
-  position: relative;
-}
-
-.pokeballCard {
-  position: absolute;
-  width: 5rem;
-  margin-left: 100px;
-  margin-top: 20px;
-  z-index: 0;
-}
-
-.pokeballStat {
-  position: absolute;
-  width: 11rem;
-  right: 0;
-  top: 1rem;
-}
-
-.pokeballBackground {
-  position: absolute;
-  width: 9rem;
-  filter: brightness(0.3);
-  top: 0px;
-  right: 0px;
-  z-index: 0;
-}
-
-.themeButton {
-  font-size: 18px;
-  margin: 10px 0;
-}
-
-.icons {
-  font-size: 18px;
-}
-
-.noFound {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 1rem auto 1.5rem auto;
-  font-size: 14px;
-}
-
-.abilities {
-  text-transform: capitalize;
-}
-
-@media (min-width: 576px) {
-  .pokemons {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media (min-width: 768px) {
-  .pokemons {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
-
-@media (min-width: 992px) {
-  .pokemons {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-}
-
-@media (min-width: 992px) {
-  .pokeballStat {
-    width: 14rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .pokeballCard {
-    margin-left: 150px;
-  }
-}
-
-@media (max-width: 676px) {
-  .pokeballCard {
-    margin-left: 110px;
-  }
-}
-
-@media (max-width: 450px) {
-  .pokeballCard {
-    margin-left: 180px;
-  }
-}
-
-@media (max-width: 400px) {
-  .pokeballCard {
-    margin-left: 140px;
-  }
-}
-
-@media (max-width: 450px) {
-  .pokeballIcon {
-    display:none;
-  }
 }
