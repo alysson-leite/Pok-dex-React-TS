@@ -76,12 +76,9 @@ Você nunca precisa usar `eject`. O conjunto de recursos selecionados é adequad
 
 ![Página de detalhes small](./.github/black-small.png)
 
-## Repositório do Projeto
-[🔗 Clique aqui para acessar o projeto]()
-
 ## Deploy do Projeto
 
-[🔗 Clique aqui para cessar o repositório do Projeto](https://pokedex-react-ts-peach.vercel.app/)
+[🔗 Clique aqui para cessar o deploy do Projeto](https://pokedex-react-ts-peach.vercel.app/)
 
 ## Tecnologias 💻
 
