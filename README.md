@@ -79,6 +79,10 @@ Você nunca precisa usar `eject`. O conjunto de recursos selecionados é adequad
 ## Repositório do Projeto
 [🔗 Clique aqui para acessar o projeto]()
 
+## Deploy do Projeto
+
+[🔗 Clique aqui para cessar o repositório do Projeto](https://pokedex-react-ts-peach.vercel.app/)
+
 ## Tecnologias 💻
 
 Este projeto foi iniciado com [Create React App](https://github.com/facebook/create-react-app) e feito basicamente com React e Typescript.
